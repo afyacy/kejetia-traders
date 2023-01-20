@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-main: #7856CE;
+    --color-main-one: #A481FE;
+    --color-main-two: #DACEFF;
+    --color-blue: #008AFF;
+    --color-gray-two: #EDE7FF;
+    --color-green: #48C53D;
+    --color-red: #F61E1E;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --kejetia_gradient: linear-gradient(292.87deg, #3494E6 0%, #3463C8 18.23%, #865CEE 69.27%, #7856CE 100%);
+    font-family: 'Poppins', sans-serif;
+
+    --size-extra-small: 8px;
+    --size-small: 12px;
+    --size-medium: 14px;
+    --size-large: 20px;
+    --size-extra-large: 35px;
+}
+
+* {
+    margin: 0;
+}
+
+.error-box {
+    margin-bottom: 0.5rem;
+}
+
+.text-danger {
+    color: var(--color-red);
+    font-size: var(--size-small);
+    padding-top: 2px;
+}
