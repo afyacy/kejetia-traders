@@ -52,7 +52,7 @@ export default function Login() {
                   <label htmlFor="password">Password</label>
                   <div className={styles.passwordBox}>
                     <input 
-                      required 
+                      required
                     />
                     <button type="button">
                       <FontAwesomeIcon icon={faEye} className={styles.icon} />
