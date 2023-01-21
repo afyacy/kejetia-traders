@@ -1,0 +1,301 @@
+.topSectionCard {
+    background-color: var(--color-gray-two);
+    border-radius:  var(--size-large);
+    padding:  var(--size-large);
+    box-shadow: 0px 8px 24px rgba(194, 194, 194, 0.49);
+    display: inline-block;
+
+    .mainTitle {
+        font-weight: bold;
+        font-size: var(--size-large);
+        margin-bottom: var(--size-large);
+    }
+
+    .list {
+        display: flex;
+        gap: 30px
+    }
+
+    .cardFirst {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 24px rgba(120, 86, 206, 0.2);
+        padding: 32px;
+        display: inline-block;
+        border-radius: 20px;
+        width: 200px;
+    
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    
+        .title, .value {
+            padding-bottom: 40px;
+        }
+    
+    
+        .value {
+            font-weight: bold;
+            font-size: 28px;
+            text-align: start;
+        }
+    
+        .cardPercentage {
+            font-size: 22px;
+        }
+    
+        .movementPercentage {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: var(--color-green)
+        }
+    }
+
+    .cardSecond {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 24px rgba(120, 86, 206, 0.2);
+        padding: 32px;
+        display: inline-block;
+        border-radius: 20px;
+        width: 500px;
+
+        .title {
+            padding-bottom: 20px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        
+            div {
+                display: flex;
+                align-items: center ;
+                gap: 40px;
+                justify-content: center;
+                font-weight: 500;
+            }
+
+            .assetMovement { 
+                background-color: var(--color-green);
+                color: white;
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 8px;
+                text-align: center;
+                min-width: 80px;
+            }
+            
+            .negative {
+                background-color: var(--color-red);
+            }
+
+        }
+        
+        .row:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    
+}
+
+.bottomSection {
+    .container {
+        background-color: var(--color-gray-two);
+        border: 1px solid whitesmoke;
+        margin: 3rem auto;
+        padding: 2rem;
+        border-radius: 20px;
+
+        .title {
+            font-weight: bold;
+            font-size: var(--size-large);
+            margin-bottom: var(--size-large);
+        }
+
+        .content {
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--color-white);
+            box-shadow: 0px 8px 24px rgba(194, 194, 194, 0.49);
+            display: flex;
+            border-radius: 20px;
+            padding: 3rem;
+
+            .placeOrder {
+                .placeOrderForm {
+                    border-radius: 20px;
+                    padding: 3rem;
+                    box-shadow: 0px 8px 24px rgba(194, 194, 194, 0.49);
+
+                    .inputGroup {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        margin: 1.5rem 0;
+                    
+                        label {
+                            width: 5rem;
+                            margin-right: 1rem;
+                        }
+
+                        input, select {
+                            border: none;
+                            font-size: 14px;
+                        }
+
+                        .stockSelect, .portfolioSelect{
+                            background-color: var(--color-main-two);
+                            border-radius: 5px;
+                            color: var(--color-main);
+                            padding: 0.5em 3.5em 0.5em 1em;
+                            line-height: 1.5em;
+
+                            /* reset */
+                            -webkit-box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+
+                            option {
+                                color: #FFFFFF;
+                                background-color: red;
+                            }
+
+                            background-image:
+                                linear-gradient(45deg, transparent 50%, gray 50%),
+                                linear-gradient(135deg, gray 50%, transparent 50%),
+                                linear-gradient(to right, #ccc, #ccc);
+                            background-position:
+                                calc(100% - 20px) calc(1em + 2px),
+                                calc(100% - 15px) calc(1em + 2px),
+                                calc(100% - 2.5em) 0.5em;
+                            background-size:
+                                5px 5px,
+                                5px 5px,
+                                1px 1.5em;
+                            background-repeat: no-repeat;
+
+                            &:focus-visible {
+                                outline: none;
+                                border: none;
+                            }
+                        }
+
+                        input[type="number"] {
+                            &::placeholder {
+                                color: black;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                    }
+
+                    .twoBtns {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        margin-bottom: 1.5rem;
+
+                        p {
+                            margin-right: 2rem;
+                        }
+
+                        :nth-child(2), :first-child{
+                            border-radius: 5px 0 0 5px;
+                        }
+
+                        :last-child {
+                            border-radius: 0 5px 5px 0;
+                        }
+
+                        .checkedLabel, .unCheckedLabel {
+                            display: block;
+                            width: 100%;
+                            font-weight: 500;
+                            padding: 7px;
+                        }
+
+                        .unCheckedLabel {
+                            background-color: var(--color-main-two);
+                            color: var(--color-main);
+                        }
+
+                          .checkedLabel {
+                            color: white;
+                            background-color: var(--color-main-one);
+                          }
+                          
+                          input[type="radio"] {
+                            /* Add if not using autoprefixer */
+                            -webkit-appearance: none;
+                            /* Remove most all native input styles */
+                            appearance: none;
+                            /* For iOS < 15 */
+                            margin: 0;                          
+                            place-content: center;
+                          }
+                          
+                          input[type="radio"]::before {
+                            transition: 120ms transform ease-in-out;
+                          }
+                          
+                          input[type="radio"]:checked {
+                            outline-offset: max(2px, 0.15em);
+                          }
+                          
+
+                    }
+
+                    .submitBtn {
+                        height: 40px;
+                        width: 100%;
+                        align-self: center;
+                        background-color: var(--color-main);
+                        border: 1px solid var(--color-main);
+                        box-shadow: 0px 8px 24px rgba(120, 86, 206, 0.2);
+                        border-radius: 6px;
+                        color: white;
+                        font-weight: 600;
+                        cursor: pointer;
+                        margin-top: 1.5rem;
+                    }
+
+                }
+            }
+
+            .productData {
+                ul {
+                    list-style: none;
+                    text-align: center;
+                    padding: 0;
+        
+                    li {
+                        margin: 2rem 0;
+                        font-weight: 600;
+                    }
+        
+                    span {
+                        font-weight: 400;
+                    }
+                }
+        
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+        }
+        
+    }
+}

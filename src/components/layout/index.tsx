@@ -1,14 +1,14 @@
 import React from 'react'
 import { Header } from './header'
+import Sidebar from './sidebar'
+import styles from '@/styles/Layout.module.scss'
 
 export const Layout = ({children}: any) => {
   return (
-    <div>
-      <Header></Header>
-      <div>
-        <aside>
-          sidebar
-        </aside>
+    <div className={styles.layout}>
+      <Header />
+      <div className={styles.sidebarMain}>
+        <Sidebar />
         <main>
           {children}
         </main>
