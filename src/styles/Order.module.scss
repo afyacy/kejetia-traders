@@ -111,6 +111,21 @@
         button:hover {
             filter: invert(37%) sepia(60%) saturate(820%) hue-rotate(219deg) brightness(93%) contrast(90%);
         }
+
+        .tradeButton {
+            // height: 40px;
+            width: 100%;
+            align-self: center;
+            background-color: var(--color-main);
+            border: 1px solid var(--color-main);
+            box-shadow: 0px 8px 24px rgba(120, 86, 206, 0.2);
+            color: white;
+            box-shadow: 0px 8px 24px rgba(120, 86, 206, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            font-family: var(--font-family);
+        }
     }
 
     .thead {
